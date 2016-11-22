@@ -17,7 +17,7 @@ public class Conexion_mySQL extends Conexion{
         System.out.println("llegasdasd mySQL");
         try{
             
-            super.datosConexion = jdbc + host + "/" + database + "?";
+            super.datosConexion = jdbc + host + "/" + database ;
             super.iniciardb();
         }
         catch(Exception e){

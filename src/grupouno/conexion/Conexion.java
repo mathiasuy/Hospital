@@ -23,20 +23,6 @@ public class Conexion {
     
     public Conexion() throws Error{
     	
-    	
-    	System.out.println("asdasdfasdf");
-    	Properties p = new Properties();
-    	try {
-			p.load(new FileInputStream("/ProyectoUno/config/parametros.txt"));
-			if (p.getProperty("mostrarproperties")=="si"){
-				p.list(System.out);
-			}
-		} catch (FileNotFoundException e) {			
-			e.printStackTrace();			
-		} catch (IOException e) {
-			e.printStackTrace();			
-		}
-    	
         //obtenemos los parametros de el archivo de configuracion señalado en Inicio.java
         this.jdbc = System.getProperty("jdbc");
         this.driver = System.getProperty("driver");
@@ -44,6 +30,7 @@ public class Conexion {
         this.database = System.getProperty("database");
         this.username = System.getProperty("username");
         this.password = System.getProperty("password");
+        //
         
         try {
             iniciardb();

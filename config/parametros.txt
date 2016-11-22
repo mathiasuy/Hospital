@@ -1,7 +1,7 @@
 databaseclass=grupouno.conexion.Conexion_mySQL
 jdbc=jdbc:mysql://
 driver=com.mysql.jdbc.Driver
-host=localhost
+host=localhost:3306
 database=hospital3
 username=root
 password=

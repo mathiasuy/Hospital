@@ -84,6 +84,6 @@ public class AdministrarEspecialidades extends JInternalFrame {
 		lblFiltro.setBounds(23, 109, 69, 20);
 		getContentPane().add(lblFiltro);
 
-		//cargarDatos();
+		cargarDatos();
 	}
 }

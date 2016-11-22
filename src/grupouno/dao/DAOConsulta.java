@@ -121,6 +121,8 @@ public class DAOConsulta implements IObligatorios<Consulta>{
 	public ArrayList<Consulta> listar() {
         l = new ArrayList<>();
         try {
+        	
+        	System.out.println("arraylist listar");
             ps = CONNECTION.getConnection().prepareStatement(Consultas.listarConsultas("fecha_de_ingreso"));
             rs = ps.executeQuery();
             while(rs.next()){
